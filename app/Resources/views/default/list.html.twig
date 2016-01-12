@@ -26,10 +26,10 @@ List of previous Diffs
 				{% for comparison in comparisons %}
 				<div class="row">
 					<div class="col-md-4">
-						<p>{{ comparison.getFirstFileName() }}</p>
+						<a href="{{ asset('files/') }}{{ comparison.getFirstFileName() }}" target="_blank">{{ comparison.getFirstFileName() }}</a>
 					</div>
 					<div class="col-md-4">
-						<p>{{ comparison.getSecondFileName() }}</p>
+						<a href="{{ asset('files/') }}{{ comparison.getSecondFileName() }}" target="_blank">{{ comparison.getSecondFileName() }}</a>
 					</div>
 					<div class="col-md-2">
 						<p>{{ comparison.getPercentage() == '100' ? 'Yes' : 'No' }}</p>
