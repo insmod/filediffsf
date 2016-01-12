@@ -63,3 +63,7 @@ c96300,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452633135,,500
 c398c5,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452633157,028f2e,200
 028f2e,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452633157,,500
 84f27c,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452633164,,200
+6a64dd,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452633230,,200
+140c9d,::1,GET,http://localhost/integrity/web/app_dev.php/new,1452633258,,200
+652558,::1,GET,http://localhost/integrity/web/app_dev.php/view/12,1452633354,,200
+5ffcc6,::1,GET,http://localhost/integrity/web/app_dev.php/view/12,1452633418,,200

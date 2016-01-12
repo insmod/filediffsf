@@ -6,13 +6,16 @@ List of previous Diffs
 {% block body %}
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-2">
+            	<h1>Comparison of:</h1>
+            	<a href="{{ asset('files/') }}{{ comparison.getFirstFileName() }}" target="_blank">{{ comparison.getFirstFileName() }}</a> and <a href="{{ asset('files/') }}{{ comparison.getSecondFileName() }}" target="_blank">{{ comparison.getSecondFileName() }}</a>
+
 				{% if comparison.getPercentage() == '100' %}
-					<h1>The files are similar!</h1>
+					<h2>The files are similar!</h2>
 
 					<small>Nothing to see here, move along...</small>
 				{% else %}
-					<h1>Similarity: {{ comparison.getPercentage() }}%</h1>
+					<h2>Similarity: {{ comparison.getPercentage() }}%</h2>
 					<br/>
 					<h3>Diff:</h3>
 					<br/>
