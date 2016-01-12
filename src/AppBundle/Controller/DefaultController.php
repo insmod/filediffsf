@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Comparison;
+use AppBundle\Service\Diff;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -61,6 +62,7 @@ class DefaultController extends Controller
                 }
             }
 
+            return $this->redirectToRoute('view_item', array('id' => $comparison->getId()));
         }
 
         return $this->render('default/new.html.twig', [
@@ -89,11 +91,17 @@ class DefaultController extends Controller
     public function viewAction($id, Request $request)
     {
         $repository = $this->getDoctrine()->getRepository('AppBundle:Comparison')->find($id);
-        var_dump($repository);
+
+        $file_root = $request->server->get('DOCUMENT_ROOT') . '/integrity/web/files/';
+        $first = file_get_contents($file_root . $repository->getFirstFileName());
+        $second = file_get_contents($file_root . $repository->getSecondFileName());
+        $diff = new Diff();
+
         // replace this example code with whatever you need
         return $this->render('default/view.html.twig', [
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
-            'comparison' => $repository
+            'comparison' => $repository,
+            'diff' => $diff->htmldiff($first, $second)
         ]);
     }
 

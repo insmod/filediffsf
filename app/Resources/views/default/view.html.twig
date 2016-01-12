@@ -13,9 +13,13 @@ List of previous Diffs
 					<small>Nothing to see here, move along...</small>
 				{% else %}
 					<h1>Similarity: {{ comparison.getPercentage() }}%</h1>
+					<br/>
+					<h3>Diff:</h3>
+					<br/>
+					{{ diff|raw }}
 				{% endif %} 
-				<br/> 
-				<a href="../list">List</a>
+				<br/><br/><br/> 
+				<a href="../list">Comparison history</a>
             </div>
         </div>
     </div>
