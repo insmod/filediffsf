@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+List of previous Diffs
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+				{% if comparison.getPercentage() == '100' %}
+					<h1>The files are similar!</h1>
+
+					<small>Nothing to see here, move along...</small>
+				{% else %}
+					<h1>Similarity: {{ comparison.getPercentage() }}%</h1>
+				{% endif %} 
+				<br/> 
+				<a href="../list">List</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
