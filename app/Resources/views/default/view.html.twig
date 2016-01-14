@@ -4,6 +4,25 @@ List of previous Diffs
 {% endblock %}
 
 {% block body %}
+	<style>
+
+	ins {
+	    display: block;
+	    width: 50%;
+	    margin-left: 50%;
+	    background-color: lightgreen;
+	}
+
+	del {
+	 	width: 50%;
+	    position: relative;
+	    display: block;
+	    background-color: lightcoral;
+	}
+
+	</style>
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-2">
@@ -19,6 +38,8 @@ List of previous Diffs
 					<br/>
 					<h3>Diff:</h3>
 					<br/>
+			</div>	
+			<div class="col-md-12">
 					{{ diff|raw }}
 				{% endif %} 
 				<br/><br/><br/> 
