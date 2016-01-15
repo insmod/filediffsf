@@ -121,3 +121,4 @@ vich_uploader:
         file:
             uri_prefix:         /files
             upload_destination: %kernel.root_dir%/../web/files
+            namer:              vich_uploader.namer_origname

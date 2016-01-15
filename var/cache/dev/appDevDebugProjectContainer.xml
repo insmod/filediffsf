@@ -403,8 +403,8 @@
         <parameter key="uri_prefix">/files</parameter>
         <parameter key="upload_destination">C:\xampp\htdocs\integrity\app/../web/files</parameter>
         <parameter key="namer" type="collection">
-          <parameter key="service">null</parameter>
-          <parameter key="options">null</parameter>
+          <parameter key="service">vich_uploader.namer_origname.file</parameter>
+          <parameter key="options" type="collection"/>
         </parameter>
         <parameter key="directory_namer">null</parameter>
         <parameter key="delete_on_remove">true</parameter>
@@ -1963,7 +1963,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5695659d53ee98.01750530</argument>
+            <argument>569872fda9f9a9.23318990</argument>
           </service>
         </argument>
       </argument>
@@ -2274,7 +2274,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5695659d53ee98.01750530</argument>
+            <argument>569872fda9f9a9.23318990</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3582,6 +3582,7 @@
       <argument type="service" id="router"/>
       <argument>86400</argument>
     </service>
+    <service id="vich_uploader.namer_origname.file" class="Vich\UploaderBundle\Naming\OrignameNamer"/>
     <service id="vich_uploader.templating.helper.uploader_helper" class="Vich\UploaderBundle\Templating\Helper\UploaderHelper">
       <tag name="templating.helper" alias="vich_uploader"/>
       <argument type="service" id="vich_uploader.storage"/>
@@ -3636,8 +3637,8 @@
           <argument key="uri_prefix">/files</argument>
           <argument key="upload_destination">C:\xampp\htdocs\integrity\app/../web/files</argument>
           <argument key="namer" type="collection">
-            <argument key="service">null</argument>
-            <argument key="options">null</argument>
+            <argument key="service">vich_uploader.namer_origname.file</argument>
+            <argument key="options" type="collection"/>
           </argument>
           <argument key="directory_namer">null</argument>
           <argument key="delete_on_remove">true</argument>

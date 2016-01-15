@@ -94,3 +94,9 @@ d314d7,::1,GET,http://localhost/integrity/web/app_dev.php/view/14,1452809877,,20
 4478b9,::1,GET,http://localhost/integrity/web/app_dev.php/view/14,1452810188,,200
 3335d5,::1,GET,http://localhost/integrity/web/app_dev.php/view/14,1452810252,,200
 b07bd2,::1,GET,http://localhost/integrity/web/app_dev.php/view/14,1452824195,,200
+f3af79,::1,GET,http://localhost/integrity/web/app_dev.php/new,1452831450,,200
+b723fd,::1,POST,http://localhost/integrity/web/app_dev.php/new,1452831465,,302
+8dd334,::1,GET,http://localhost/integrity/web/app_dev.php/view/15,1452831466,,200
+62a93a,::1,GET,http://localhost/integrity/web/app_dev.php/new,1452831488,,200
+ccc67d,::1,POST,http://localhost/integrity/web/app_dev.php/new,1452831495,,302
+68a185,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831496,,200
