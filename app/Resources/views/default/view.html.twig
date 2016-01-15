@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block title %}
-List of previous Diffs
+Comparison #{{ comparison.id }}
 {% endblock %}
 
 {% block body %}
@@ -36,7 +36,7 @@ List of previous Diffs
 				{% else %}
 					<h2>Similarity: {{ comparison.getPercentage() }}%</h2>
 					<br/>
-					<h3>Diff:</h3>
+					<h3>Differences:</h3>
 					<br/>
 			</div>	
 			<div class="col-md-12">
