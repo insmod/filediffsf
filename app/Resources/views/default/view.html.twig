@@ -9,6 +9,7 @@ Comparison #{{ comparison.id }}
 	ins {
 	    display: block;
 	    width: 50%;
+	    font-size:14px ! important;
 	    margin-left: 50%;
 	    background-color: lightgreen;
 	}
@@ -16,8 +17,14 @@ Comparison #{{ comparison.id }}
 	del {
 	 	width: 50%;
 	    position: relative;
+	    font-size:14px ! important;
 	    display: block;
 	    background-color: lightcoral;
+	}
+
+	.differences-only
+	{
+		font-size:0;
 	}
 
 	</style>
@@ -36,10 +43,12 @@ Comparison #{{ comparison.id }}
 				{% else %}
 					<h2>Similarity: {{ comparison.getPercentage() }}%</h2>
 					<br/>
-					<h3>Differences:</h3>
+					<div class="checkbox">
+						<label><input type="checkbox" name="differences" id="differences" />Show only differences?</label>
+					</div>
 					<br/>
 			</div>	
-			<div class="col-md-12">
+			<div class="col-md-12 results">
 					{{ diff|raw }}
 				{% endif %} 
 				<br/><br/><br/> 
@@ -47,4 +56,15 @@ Comparison #{{ comparison.id }}
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block documentready %}
+
+$('#differences').change(function(){
+	if ($(this).is(':checked'))
+		$('.results').addClass('differences-only');
+	else
+		$('.results').removeClass('differences-only');
+});
+
 {% endblock %}

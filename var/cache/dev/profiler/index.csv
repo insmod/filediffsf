@@ -100,3 +100,11 @@ b723fd,::1,POST,http://localhost/integrity/web/app_dev.php/new,1452831465,,302
 62a93a,::1,GET,http://localhost/integrity/web/app_dev.php/new,1452831488,,200
 ccc67d,::1,POST,http://localhost/integrity/web/app_dev.php/new,1452831495,,302
 68a185,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831496,,200
+40b21a,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831593,,200
+c1caf5,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831635,,200
+bfd3da,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831809,03ac7e,200
+03ac7e,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831809,,500
+b25839,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831833,,200
+a280a7,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831891,,200
+34bdb1,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831904,,200
+c87db0,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831908,,200
