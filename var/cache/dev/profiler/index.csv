@@ -108,3 +108,5 @@ b25839,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831833,,20
 a280a7,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831891,,200
 34bdb1,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831904,,200
 c87db0,::1,GET,http://localhost/integrity/web/app_dev.php/view/16,1452831908,,200
+b13359,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452832031,,200
+054972,::1,GET,http://localhost/integrity/web/app_dev.php/list,1452832070,,200
